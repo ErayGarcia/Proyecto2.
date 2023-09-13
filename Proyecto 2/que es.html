@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación</title>
+    <!-- Incluir los archivos CSS de Bootstrap (5.0) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <style>
+        .custom-navbar{
+            background-color: aquamarine;
+        }
+        .custom-navbar .navbar-nav .nav-link{
+            color: black;
+            font-size: 20px;
+        }
+        p{
+            font-size: 18px;
+        }
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .content {
+            text-align: center;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        h3 {
+            color: #333;
+        }
+        body{
+            background-color: rgb(243, 242, 159);
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <!-- Botón de Inicio -->
+            <a class="navbar-brand" href="index.html" >Inicio</a>
+            
+            <!-- Botón de Hamburguesa (para dispositivos móviles) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Elementos Desplegables -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Elemento de Tipos Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="tiposDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tipos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="tiposDropdown">
+                            <a class="dropdown-item" href="categoria.html">Categorias</a>
+                            <a class="dropdown-item" href="politica.html">Politica</a>
+                            <a class="dropdown-item" href="configurar.html">Configuracion</a>
+                        </div>
+                    </li>
+
+                    <!-- Elemento de Información Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Información
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="infoDropdown">
+                            <a class="dropdown-item" href="que es.html">¿Que es?</a>
+                            <a class="dropdown-item" href="origen.html">Origen</a>
+                        </div>
+                    </li>
+
+                    <!-- Elemento de Uso Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="usoDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Uso
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="usoDropdown">
+                            <a class="dropdown-item" href="ventajas.html">Ventajas</a>
+                            <a class="dropdown-item" href="empresa.html">Empresa</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container mt-4">
+        <div class="content-container">
+            <div class="content">
+                <h2>¿Qué Son las Cookies?</h2>
+                <p>Una cookie es como un pequeño archivo de datos que un sitio web le envía cuando lo visita. Independientemente de si utiliza un ordenador o un teléfono móvil, siempre se le pedirá que guarde esta cookie. Incluso si utiliza un navegador independiente o un navegador como parte de una herramienta o aplicación, también se le pedirá que guarde una cookie.
+                Además, la solicitud es para guardar información en tu computadora directamente en el servidor de la página web desde el momento que abres la página. Por lo general, te aparece como una alerta que te explica los servicios de cookies que tiene la página que estamos visitando. Podemos aceptar o rechazar, pero lo recomendable sería aceptarlo por que la normativa protege los datos de las personas.</p>
+                <img src="https://9b9798a339.clvaw-cdnwnd.com/fe75f2f270d60680dbe69798535793b2/200000110-ba217ba21a/cookies.png?ph=9b9798a339" width="50%" alt="">
+                <br><br>
+                <h3>Función de las Cookies</h3>
+                <p>En mi opinión, las cookies desempeñan principalmente dos roles fundamentales: facilitar el acceso y comprender los patrones de navegación. Su función radica en permitir que los sitios web reconozcan tu dispositivo, lo que conlleva a que, al regresar a estas plataformas, te identifiquen y recuerden tus acciones previas.
+                Además, las cookies son funciones para recordar accesos de páginas que ya hayamos visitado anteriormente. Actualmente en el mundo, las cookies están jugando un papel importante en el mundo web, ya que te permite agilizar el proceso de iniciar sesión y te ayuda a estar conectado con páginas web que visitas con frecuencia.
+                De igual manera, las cookies también te sirven para conocer la información sobre tus hábitos de navegación, algo que pueden utilizar terceros para enviarte información relacionada a tus intereses, pero también para identificarte como usuario según las páginas que visitas.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRqLUgz2UX0kzWDwkI09LaJkXmVxaip94cApOhCOJZWhyRFpIR9-JjOFrz3Jafmh3cwYM&usqp=CAU" width="50%" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Incluir los archivos JavaScript de Bootstrap (jQuery y Popper.js son necesarios) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

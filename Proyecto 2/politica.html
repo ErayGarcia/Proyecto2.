@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación</title>
+    <!-- Incluir los archivos CSS de Bootstrap (5.0) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <style>
+        .custom-navbar{
+            background-color: aquamarine;
+        }
+        .custom-navbar .navbar-nav .nav-link{
+            color: black;
+            font-size: 20px;
+        }
+        .custom-card{
+            background-color: rgb(167, 243, 148);
+            color: black;
+        }
+        body{
+            background-color: rgb(243, 242, 159);
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <!-- Botón de Inicio -->
+            <a class="navbar-brand" href="index.html" >Inicio</a>
+            
+            <!-- Botón de Hamburguesa (para dispositivos móviles) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Elementos Desplegables -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Elemento de Tipos Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="tiposDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tipos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="tiposDropdown">
+                            <a class="dropdown-item" href="categoria.html">Categorias</a>
+                            <a class="dropdown-item" href="politica.html">Politica</a>
+                            <a class="dropdown-item" href="configurar.html">Configuracion</a>
+                        </div>
+                    </li>
+
+                    <!-- Elemento de Información Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Información
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="infoDropdown">
+                            <a class="dropdown-item" href="que es.html">¿Que es?</a>
+                            <a class="dropdown-item" href="origen.html">Origen</a>
+                        </div>
+                    </li>
+
+                    <!-- Elemento de Uso Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="usoDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Uso
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="usoDropdown">
+                            <a class="dropdown-item" href="ventajas.html">Ventajas</a>
+                            <a class="dropdown-item" href="empresa.html">Empresa</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1><center>POLÍTICA DE COOKIES</center></h1>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Primer card -->
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFAKtVRnALjZaN0_LtUknw0zp61rEBiCJeJrBnxOGmhcJF_qjmDl_iqly2lCvkgGrhnK8&usqp=CAU" width="100%" alt="">
+                    <div>
+                        <h2 class="card-title">Lang</h2>
+                        <p>Preferencia de idioma: Se utiliza para recordar qué idioma escogió el visitante en su sesión.
+                            Tiene una duración de un año y es de tipo propias</p>
+                        <a href="https://www.cesuma.mx/blog/para-que-sirven-las-cookies.html" class="btn btn-primary" target="_blank">Mas Info</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Segundo card -->
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card" style="width: 18rem;">
+                    <!-- Contenido del segundo card -->
+                    <img src="https://www.boomvisibility.com/wp-content/uploads/2021/07/cookie-setting-image-rev2.png" width="100%" alt="">
+                    <div>
+                        <h2 class="card-title"> utma</h2>
+                        <p>Identificación de visitantes únicos: Utilizada para registrar visitantes únicos con fines
+                            estadísticos y analíticos. Tiene duracion de 2 años y es tipo Google(Analytic)</p>
+                        <a href="https://ayudaleyprotecciondatos.es/cookies/" class="btn btn-primary" target="_blank">Más Info</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tercer card -->
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card" style="width: 18rem;">
+                    <!-- Contenido del tercer card -->
+                    <img src="https://assets-global.website-files.com/5d6ebfe6117b67440d16086f/60f00d79639cd05d61b6a713_Ima%CC%81genes%20TechBlog.png" width="100%" alt="">
+                    <div>
+                        <h2 class="card-title"> utmz</h2>
+                        <p> Registro de fuentes de tráfico y navegación: Utilizado para registrar cómo llegó a nuestro sitio
+                            Web y los recorridos que sigue mientras navega nuestro sitio. Esta información para
+                            mejorar la experiencia del usuario en futuras actualizaciones. </p>
+                        <a href="https://eilfs.wordpress.com/2012/07/29/las-cookies-de-google-analytics-utma-utmb-utmc-utmz-utmv-y-utmx/" class="btn btn-primary" target="_blank">Más Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Primer div (izquierda) -->
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card" style="width: 18rem;">
+                    <img src="data:image/png;base64,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" alt="">
+                    <div>
+                        <h2 class="card-title">utmb</h2>
+                        <p>Determinación de la sesión del visitante: Google Analytics utiliza dos cookies para establecer
+                            una sesión. Si falta alguna de estas dos cookies, otra actividad inicia el comienzo de una nueva
+                            sesión. Tiene una duracion de 30 minutos y es tipo Google(Analytic)</p>
+                        <a href="https://www.thyngster.com/las-cookies-de-google-analytics-desde-dentro#:~:text=en%20nuestra%20web.-,__utmb,visitas%2Fsessiones%20de%20las%20visitas." class="btn btn-primary" target="_blank">Mas Info</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Segundo div (derecha) -->
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card" style="width: 18rem;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAABIFBMVEX///8XhgDw8PDkoZHG28UAfwABJFbx4FohKjIAAAAZIyzjm4okLDQRHSf6+voeJzCJ4FHv6ecvNj0AFCApMTgAER5bX2T19fULGSSJjI8VICra29y5u7zOz9Cpq62wsrQAAEnFyNB4fH/69dHw3k7t3dlESU/X2NmWmJsAAAueoKLjTCbi4+QAABWEh4rHyMlscHSKlJw3PUTlqZtLUVbb9c+C3kSorrVYXGFwdHh5iakTciUAG1mCgFi74FW9mjzMUiFGXwCj0SPTljJKM4CkrsPpyMBNTU2Ejpfqt6uOm7UhISGRkZHs19I6Ojp4eHjiPgV5gIrN0t21vc4bGxtqamrowLctLS2Vobra2dDq4MsAaQDJRQA4VADQkBw8H3i9OwnrAAAUxElEQVR4nO2dCYPbNnbHUbgHRfOoSVC8QKJmG5FCIZJStLU03avbxp4kst2xM8nu9vr+36LvgdQx45nxXI7lDf+JRxAJUOSPDw83ScigQYMGDRo0aNCgQYMGDRo0aNCgQYMGDRo0aNCgQb90OU4YhhT+OZ/7TL48OSE9VPgJfkKlhKQlGav9prOMOJUOcQzQuA9/YXLoB3qQDaoM/jVwSzJFaJjBoSCQS4fkROUSvqVEUYhTxZpaE4ZFRipSE1KWJD2jGAESUx3z6BV+SO9BFkjzVDq1kqpQc8VlWhOZ8owL4nAinZjkmVBzXtZkriSpnErFTqyIjFPSNLyhtcPLPE1rdUZ4KcpHvNBPoStMr9d9DTCs8pgIoRQnVHBF5qTNZVNmpKFkrfJM5RxsDf4HkkpmcV6FYJKTpiaqkgK2l7Jq0gZQY+BRL/bRdbXpPYifSMM6bMgZ+DJRAr4Y/lNl2UDezfIsixsna6qUnMFmUkuag7erHPjSNDFEgEBBuMYHUfhxe8Kb6N2XnyMb7kCmVTmYWUmBDgWjIhIKD4TBaZ6TKpMKvwHUTGYkFfhFgC1CoFSy5BSysoOBx73ex9XN9O6ff7XUDZc+f8iBj0XX+72tPvcZHrU+Sm/gd4MukXrW6eLGT1GD/svQpaz77Gmnwfxup8vG9/QJ6jK+wfyu1uVy4xp8g/ldrcuVluvwDT0wV+oypuvwDbn3Kn1Q57sO331yr2b+JYDPMvXxSFcJ8V2oqlzCt993j4O/wJPiXW/T8/npvGv4Z7sQKU/3kenIH4m7HZ9CQ09LjHytUXa4W+S3PI4zmt026iWB6/uqq6k86b1g2KnH11djnt3L+R3gE/OSlvMX+H2e9SESVgetttz12OpOh1fToL8N3PSMBDQ9xDf1q1seyInch+DT9vb1lS3f3hYfio+e4t/yNCThKV5iekpJ+WI+P8C3Ysyz75SHlG3u8Bl5BmoO84hvfHp89Nb47uzCeDWXoHk1VySdY3IF0NQcL5GeKqLS9Pken4oM6bmyS1mvY4QcbxSRbY3k5aYk+brW3aZl3NbYM1NbrKg0cG4mvd2V8QaOX1YbXhlsXGGHd9UW6BT4hpO8JmLTEL4umi7yuuDHii8MX5QhDUW2M1y+o9XM9bZ0j0+6vnNuLTC4tKMgCYDkNBKTWWJgFl1Esp2ZVgD8ZBAFkT0mre95buftAN+2P3phtxi7yKeeZ00lERDbtycOqf1xPFuQNio208QKAFscmLZpr44U38Wig6jsxVz1IdGHyj2+ibUkwrWBQmO7PKxno5D4XtLyymUG7GbuGIJWS7LAFWFjJnmzsaxa9tbnJVhyAAQVRFluWqTMXdbmpQpcGWaeW5PYYj4YbcusJZcGW5B0FBW8tqLmE/q+J4/j+0CZnL/oXFO5D+3wKRsyroqsGBIkbk4dB26Xz8YEyxSAOmFomOfWhBTGyqFOC7QPfZ9nRlE0RQiVufAi3K59X+UuIDZkc8DnYh5uLQuuJLZ8QtOMhtQFco+C7yp6zx6AT6kXmUrVi+fp1nBfzPfZOLyIrzISisWHBVmJmUnExhkCQF+YJiYnE6OAYG0sMM50OrUT7wI+s3G2g9MTZq3JFt/aYhA7MmdALMKtrbEkeEsih+SLYDrzHoTP2eHrQfX1l2eHGzW+Ox+6EfKFEPAHjDDUeSyE8rcLOfPyIj6PeavVauIlAMTJW89kgerLzjIBSgf4rBVHNRfwJbsqi7NgXQWoxzdputixwTp8uFO6ERG+W3FuPQgfuYTvyePhO8y82SkaBuJLT9HunLm+3B2+0ta5z0bDyQS49cwEk/PZBPaBe1IH+GoXzSfj/CK+3VDm2oWbgFYbWBVyQmgpFx/ia8ETEGr/PPju0/Ta4wtP8UIxyzpzPVB0qm/HDl9smU1ZlumSmQ6H+m4WW0EGRcdiUbUuQtzjg8KgyPJoVhMasUm8LToMEzTLSBNFKjcBODGZFzdhYrSZMILzD/GtLYM3E8sqnAfgC2+J7z49LgdFRzmvoJaMwXQ+h1BnLLtGW2BP9KcMZoIUPtRM/Fj7vnaWmC4cxvPRnxU+IGgSqIror2N7W3GZmWaHL4wCsLmJD4erAncmSWlFQeCPseKSYNQx7oLfmTppZPqjepxMSzIK7ouP3BLffQ6tdF25SxqWTensQr0t0z7LUd6XzxAAHqmQAslj0dFIgZEb3E5KjkYccpl30SGgj654L5rqIWH4DtsbKSGaA5FKnVYP+WX6EDoazaHNDH8o4fyeXQZwMrfC91m6+7qS98h1K3yf5cxGwW1brZ9Rl/Bdpaefp8/u3t1wP6ecj9J78u3nPsdj1sfNbxjouEmvb+b3mbLul6OXN/F7ULnh3GC4dNeUoY88EEpvcJrbM3rM37zJ/h4wwbReWGx5bY3Um7V9aDm7XTc9vakis5/FVkeReU2kfMLYIsZLOp9NbvWbt9KzJ0+v1rf393uNbUBTyjIn19yAibHuQ0t/fJsD5kF0/c7JLO5D3PfY8upIy8RNEte1wPBaf4cvfIS508+u1AMMXEWeXTd8aVnXsNnja8StZt9WhnH9zsTY9KGNYV8TJ0+sitLKTtb4m1trFbe0/Y/ow/7SB5W4a8vU+XZpj/Du8mo7Q7mpKn3mGh8VcBmNbkkdRIGLS0lWdX3JIa9wRNLhLWPbabqZrLr2Wp9IcYu1HBtnahdtezghKMl127iwsFeR1PWG9L+ZykrYRkEUnAXNHziH+sKg+UNXxkTM05+qaShRCxs0gZOnEwwtVIcvXNiR6jKvYtC4j5ZdTl8FsZwmrg9AMjexk2hMwpnleb1Ta/0osHG8ok/kCBzamGEjpRlBNN+EPYlt68ONArGcaq9ZgyveNm915o19O0hcOA4PTDWLXD/+8DruJEevK3qERUXKZu3+24JZm9i1wCUtLTeOLex7x06oiZXA5YwNiMqMtmyY22XoMVssZGGwMaEJ82ThugWpV4zVNe7NfCNP22C2S1SUNWMrHH8jab1kLI6Jx6yqdg24L77nJYW2vjRgzITzQiNbG0v4bsVpiwNU3PSsuvK84FjmQinbKnZfGuxwxy7ystR9a9y0G0C3HlsMMzbi4wl2KAnX1XduzAyK+d8l0jVTtJsg3Ps+YZoNcVR5mMjdDevGGI1jHzWRRpQCPnNbj2kWkWkxhm1pxAen4ZDMjCiE8LQa0zyWJRA0YvsiQxpwnmBIrhCuDVycxJAE6hCsKyIRX2V4s+k0Mma02zLWyVxAiINEGXbH7/BR30qiZUwPE5nGNuNpfF35oWzdab3en5bi8cTyfNpbn1GptZU42F9N++hHIosZ2pDEeFxKI7mMrwJ8nsFcLC97fFKrsz6Nr9rjSw7xQY1yYiaGHR4kuoQvNtAule2Kg+kGTaONq2VwMMRHpAW+LxDkCPFVph7xUpblh11W4q6dZfoMGzPhOHZbFpaf9pnXxOsNy+wAH1pf5WLWi60Aba2vDausxKMlzUGiS/iEHj1Cd3GAb2HPsGQqcPRE4yssKMF1n/jR4SMLy1qsx6YXwdkbzMulLjCgEJE5Yy6OjEPJa+FIBuJzgLZKl4Gr0+7xKZ9NRKzLAGkYGz0JK58GnErDz8g+kcEWohtu0/hCE3/RwOGgPT4RsYUUhYtbEV8TsCqXsjlKfOEqckFBP1hr26al0BoxhMXBImqxxgB+fAX1ElJGdhDYbtcCGEdYla0i38E6hZ3Y2HRJZ4atByz0PA4bk+8TxeABO0zQZiO4B34n8SjO9dj1um4C3KgrUG00gTNkNjTw/BpPA/HNguPBBx6rKuq+duvkdS10vnREXecYyiXXfytH4HItEuZFHwXsRG9pJKKnsqi7qyrjoifBIaT92D6RKLqJP32qbg8GKrkvTlVe9wm5zImaLKTMVyxwUilD/CX5Bax9PRq1Jnpn8AJDl9x9VEXGYrkw7fXHow66QnJpB+74jnOCBw0aNOj45RxLH8qdFcrxZFJ8tA8jmuquGazaLaeHHb9q3I67eljRthWho9GdZ/I4bTCr4Uz6k3DGLaq+9pzU8TyzIzNdw3Qt+2PjGJYNFygSn2zbalulft/9h4GChLPozmVkYbIkJkXQdz06AbNM0zSia6oqq+nRzKqhNjPbvPK2PaDXSvfdx4ZFLuNTtoddS9iy96yCOHGVXXOIa2XoXrNudiDBOfRsVVU18+yrb0Rw74l+j67C0k31cMH8VPeROFx03ZZOpp8NlGU4IpuRslSkXFusLDU+ynnfCAB8DI8R+gzxQUTtxxqhl7+UcJASc6HiosviIezpksImzIVpaVhFWZYLqy27ScF68jlRpp6/S3nfyYAzWrE5nplWXB6Jr4w8PZ0Tl/xUJJ8taBKZs+6m+0EFWTGZhiQOEmIGdagHKDzAt+ZTO+l7h5XNCjRKaa5WYD/hCJNnhm3b2A2xnFXVCAy7DWzbXwE2HkVBhJ13kFltO5pQsp55nuV7EfPYTNsf4NO9/Qz7fiqIZXtpN2DiBwWpILoxPY5KtIr6sQ6Kgx6563nna9fz9abCHeN05iQlS7cmnhE7q4nHxi0ZM8hnK8vqUirbzBYJJ17SLBFf5AqiAuYVE1zWMmaLaJKT1jXPW+yCCn2r5etopMDhueO1ay1INWbeBMofz1uMtVPrra80IU/LyFoWFgPvsLSWvPJHXKwYm6yOo89lN9YRgr8BfOhV9BINog2SCJe5nBgm0DHqne9jOBN3jOsTSLdoTSSrJmHae2l8hWVC7loyRG0CkjTC7C1cu1GRHjLjlPpoYhx7ZImpHcih71vGdWF4Efw0ZmCFERjGb3CY8/6TnB9bu7GO3vqSsF9jQJCLrWKzNjfKTugWH3bEj62uj77r5te9lyZbuJIsrB7fxNqO3411L74wcR2hYwMFy3InraTYlY03yUYoXR/0AT6PYcnr19iPr6tK8IutaSzGVfqQ1VmPr8TrbIjjGBhY3wE+skiasV1GLTcBwSE+4wN8FZiKs8e3sLbleBdXuHrk2zQ2RLVJZLuBajRRYqL1f4CPLYuiwAWHabesYWwtoUg3osiY8aPCVxuIhYRQJqjL+OqkAttxvRgqZR/BRxMksMPX2VxVVN3gMGk0hTRxhaMolKWuWymM1y3z+hCftR0RCW0dxJUkkDAsF5CXHR/xOUo5RMFGpT7j7NYQnNuyii1m1uQyPhyVXoP30quIenwu1CKuwAfFKD3AxyOjyKQdbfHheiTeTFgUZlgwK9PVI6C8WTJf7fCxRaPrNtuSF9UaZp61VpA5o6Bwwgn6DZ+NM6VG04yMZpKMH2fyyz2VeqbhuoaPdz6PIsQX+B0+Gli2JHFiRYDGStBzB8xmZJVofHbSrVcNIpyHgZRYsm11FJFpJ8nE6ePCLXFt2/U5LvOw3cg1wGpcN4FcjDUQH82bbGwWdBWXmbnDFy5MiIXTMqrANCE+5OixaU2FCiA4g/NrP9pg+qRyxHo1jnVZ2xQF4FNF0Y8lxEVRkgy8EIRrvVxZjJeFzpRgm0XRWV+h51boWT1FTsJuMKNZL1u9dLLoGli0Gq+6xUXwc+c4ZEFC2KRXUZOi6IY7Vt00Q6co9s7Nyc+XXYu8KeA88RBhvVpltCgUwYXSsjiaJtygQYMGDRo0aNCgQYMGDRo0aNCgB6t7OMgwbfOeOkvLsuSiHADeS2f4R4kM30okc1zXeGP0bHhewgX1+PCFOg3JHarxNXlIBCclLxtOMqF4RrLcUWUennGaD7Pa9zptgNIL/T4ioiSRRHRvhRE0bSpSURGeAWKppKpKHgLTKrzzBKC/ZJ018zQjHDOvIGqenzmkUUjSETnJCaeaaSnSMlNgkg4th5GFA/EKX2GHD+6LBS6DwcwrZUpl5eTwpaEIUZA8z0qFGJv8aIaoj0Znzz/3GQwaNGjQoEGDBg0aNGjQoEGDBv1lyQkf/BTAX66cx3gG5Revd9+dnHx3j247TS/8pfP75kTrj3dOiOBe//iSPvZDmb8ovT9R37x//406+eaOCbXxvXz6LdpfN9Z7xVCQypzw2hGOrCQNJrl+BCk9HETmuX5cVnmVrfejeIITJy/hXwP/fo5xPefkpAt8d3JHGwpfv/yKfvXyNX328mV3lRJf7ZJSXEJGU6KclDTfb0bqpxDf6+c4CjCnJNVQVKjI+O2rGh+ul470L8MO/ZqoFAok1b1FRelV5YpAWvjEIT2qiIB/WGQRiq9bQdOHSHOCr/URYaMkyZ3c4aoi8mfwKe9O3neB5yd3dH/ht09fa8v76unXHfnv83OyeTuio3H2w2pTvHq1aUabko6KEXlV/5CO6s34zfmrjY5Sj+j5q9yRsIGPcOFoVVbhWRkTmUoaZ3mT5bQqYyRTVrgBApQq0ej3Yql5yiFFVpEKB0UJ0QN+IAm2jo9OrOCz+RnMb0dtx/G2Anw/vn5Gn71++fRrbX3piI/IBjmRjSSjmpfnNOOj5ifyJh1Vb7OfyEbwuDzf1CM1IudNWW7eSIgYjvBoggjFSU5rLih8SiHAkPCJxpxI2hCgc5plPBcZd4hUGW4qRe1IwhET1QxJpeAzS/FT4qjpJ9e7rc97f1frc7598uTpy/D106dPOnxv3/JX4s3bH8SIpD+82rzl2TgbAc0fyPf01ds35U+kzkWdrd68HUGU8+z81eptBdZH9NNbqqxy6nIOUHLAJ5tG0CqrKe7o8c3x6XxNxgVvwKXOmyrPahxVxmV982yuUpLzMuRgjrIpHZH9HG+iCU++e4ef705O7nqzEN+Pz/BlDF/r7wqfS+6okCrtxaBCrfTT4hW4QZKi/6IhROijgPNS8Be9WldyQ2T9IA70bIR2vk+//aDfoFcOwnHxsLghhAOADySl6FKrDDyjwo3956MxuknfvPvmj7r2cueaC75FBV+bDDb4OKdyv8cpfeb39Xz3jmLW/e7u5dTrrzs9Er0vVO+hzHh+x3KjF1Yghvl9gwYNGjRo0KBBgwYNGjRo0C9Vfz1or+cX9ad/vKBfbfXnl6g//erP78jfDNrpv/7hon7zTxf023/p9bv/BP33//zhf/+P/NWgnf711397qF//5u8u6Ld/3+t3/wz6/b/94d//Y8B3oAHfgzTge5AGfA/S3fH9P9Kpv7c+XSswAAAAAElFTkSuQmCC" width="100%" alt="">
+                    <div>
+                        <h2 class="card-title">.Asp.Net.ApplicationCookie.</h2>
+                        <p>Información de usuario autenticado, cuando el usuario desea que el
+                            navegador recuerde su usuario. Tiene una duración de 2 semanas y son tipo Propias</p>
+                            <a href="https://learn.microsoft.com/en-us/answers/questions/1029301/owin-cookie-aspnet-applicationcookie-in-authentica" class="btn btn-primary" target="_blank">Mas Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!-- Incluir los archivos JavaScript de Bootstrap (jQuery y Popper.js son necesarios) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

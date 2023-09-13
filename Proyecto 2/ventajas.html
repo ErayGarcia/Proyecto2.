@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación</title>
+    <!-- Incluir los archivos CSS de Bootstrap (5.0) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <style>
+        .custom-navbar{
+            background-color: aquamarine;
+        }
+        .custom-navbar .navbar-nav .nav-link{
+            color: black;
+            font-size: 20px;
+        }
+        
+    .Diseño {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            background-color: white;
+    }
+
+    h2 {
+        color: #000000;
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        padding-left: 0;
+    }
+
+
+    h3 {
+        color: #000000;
+        font-size: 30px;
+    }
+    body{
+        background-color: rgb(243, 242, 159);
+    }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <!-- Botón de Inicio -->
+            <a class="navbar-brand" href="index.html" >Inicio</a>
+            
+            <!-- Botón de Hamburguesa (para dispositivos móviles) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Elementos Desplegables -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Elemento de Tipos Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="tiposDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tipos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="tiposDropdown">
+                            <a class="dropdown-item" href="categoria.html">Categorias</a>
+                            <a class="dropdown-item" href="politica.html">Politica</a>
+                            <a class="dropdown-item" href="configurar.html">Configuracion</a>
+                        </div>
+                    </li>
+
+                    <!-- Elemento de Información Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Información
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="infoDropdown">
+                            <a class="dropdown-item" href="que es.html">¿Que es?</a>
+                            <a class="dropdown-item" href="origen.html">Origen</a>
+                        </div>
+                    </li>
+
+                    <!-- Elemento de Uso Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="usoDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Uso
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="usoDropdown">
+                            <a class="dropdown-item" href="ventajas.html">Ventajas</a>
+                            <a class="dropdown-item" href="empresa.html">Empresa</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1><center>Ventajas Y Desventajas</center></h1>
+    <div class="container m-4">
+        <div class="Diseño">
+            <h2>Ventajas</h2>
+            <ul>
+                <li> Navegación rápida, sencilla y personalizada: pueden guardar las opciones de configuración que
+                    tengas en un sitio web y mostrártelas la próxima vez que accedas, evitándote el volver a tener
+                    que configurarlo.</li>
+                <li>También son útiles mientras realizas compras online. Si algún problema te impide terminar el
+                    proceso de compra, las cookies propias te ayudarán a recordar las cosas que tenías en el
+                    carrito, evitando que tengas que buscar los productos de nuevo.
+                   </li>
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAW8AAACJCAMAAADUiEkNAAABC1BMVEX09PSAy44AAAD/y75uwX359vnqrJ38/PyE0ZL////39/eCzpD/zsGBy4+F05T9+v3vsKFtwHzi4uJycnJyyIJ0uIH/08X6w7bzuatmZmZtbW1NelVCQkKTk5NXV1dWiWBms3SHh4dPT08IDQns7OwOFxCtra01VDsqQy/In5Xeo5WcnJwyMjIiIiJHcE5/f39GfFBsq3fR0dE9YENinG0bKx64uLjb2NsWIxlhq28XFhc/Pz8pIR+ae3NwUktoU07Nl4nHx8dXmWJppnQiNiYzWTkZKBwPGxE4WT5NiFgeHR5IclCx3rk5ZUGDaGG4k4lSQT3fsqcyKCZCMCyacWa5iHxuV1KBX1bmvLLi2HVlAAAH+klEQVR4nO2daVviSBSFoRCyAAkiiwqCCCIK6rih0mq3vdnLdNv79P//JXNvJZEsNE5ilEfnvJ/6kf6Q53g8de+tqpBIAAAAAAAAAAAAAAAAAAAAAAAAAI8NnZj1M/w/0BVFSXSKRCdB/4Tq94mu6Pv9pcFISEaDpZXLBCS/LxTlclkEaAwh+X2gJPrblsJXvYOdWm3noHdiS75bhOIxoytdmSJvP71cLamGyhhG+VXttVR8oajM+gmfFEqxzrK+OS2VSkkXWVUt16TiK7B4fChdlvTTamluLumHJD+8ok+392HxeND1BdKzdzpJbUvybJN/H31t1k/6JND1Bon5F6n9B7kJNd/jFEemxIC+RlKeSrnzfxQ8a7DFGwkIflcUcvf66lR3S4w9ErwOwe+I0hKivTp3q9xk8XJbiDUsmndCGdphMj8lTHjFdARfwKJ5B/QOyf2ydIu91Wy5nFRZcK5S4PDoaMtUdku5p7hbbVL93a6RxbOc4fuI8Kjo+0Jcsdrz09x9YE1RNkhwrlK2oXdUlLXb0yR7yBMrWlVFkyLF2ODWftbP/Uhhe78u3WLv7FuKEE0rCnFEeifzJHwRDo+EQun9cu52ey9p6bRGfwqqDHPuM2f95I8USu/b7K2uk59N0nvb0lv6HQaPgt61xyZT7M123iV7m1SnH6iO4Xdh8AgoS0Ks3hIn+bZlb5PsXc5aCUOO78z62R8jmhBv/4O9W2xv+lN4p9o/qwnRRaCERi86vY69MqrZoL2pGumQvdNje8sus4FACY1Okfz+prdUy81as6z67F2z7d2n9DacnxqvhZj1wz9ClBUhTp34VuUOjqgZHr3Z3mmmPba39Vu4RKCERVlwlsu8I7dPcGNHiL5p2XtnbP3sK0ytIsAbDfO23mzk/jHJKg5dulJQt6W96efueRb97yXoHRZlTbSl3sk819QrmqnxMHycG8YBFSLc6lDw1NzJnj0S29A7LEpdrDt6U5xcsrItIdbzrjrkA5nb7PjsnTR6WDDD4/M3d5FpjTKm59TZjr13ffZOGu/Q0ofHnd9JsvCQ6+z0wKn82N7bvFhSmd727kaoO9A7PO76RA65j211RZMF50n30LZ301uXqx/pP0PvkCh91/iEa+oRd5LmJQn+Kiu3zgaa9QtY9zWe0DsSetcafst+nu1c50TR+rJI4TVRLqHLAXvLZEeehMfMz7vGg0d82IEFp5w54p6G5TePhTjxz1X4d4MJYXjSf5fGm8XWYQcW3KzTmunYmxbVw4De9CHsHRq9OLq6KVDsww6ssdlpc2u/xunNO5y+NCHWxTMc+wkN7++8dw1k5ZHMoh0idrnSkIunF/5LwA5PBDr29ryz4cB19SBtWrtnDc0qVoL25uIRGw4R4I7ndM4teM/SOW12l7k41OoT7C3nKigHI8A7Dm/cBs/m160NhrRp2rV4z/DLncwKjKuioQ/GLea4SBlqUm8zrdHHewF7c5y0oHdodEXR/AZPqrKx18zj4XA/TZ9uBIsTrgZxZjMsunK8srDGN3c8CZ40qLHf7ls3ukfuafiNvfdw6j48yuUz58L2ifeALDePN2wE01s2+rB3OPSWZWDp40/eROEIF5+vr8/PxITqhAOnDnuHgw9qii+b1VTq92bb2/TIFfNLtZLLVXKf/Rs7SevAFdI7HHwSQmxWcqlUKlfZ9FzgkXI/lx/RhxdCfPQumJw2uMITDj5YJb5WUhaVc9f1S0vunP1RNSNE27uTxmPyWT//Y4PT5NqRmwT/dSO4V+7UYuHCW6EYh7i/E56OEN9uNOXYeG5fUit55c4VCv94Gh4pdxeLZTh4LHju1tsS/K9S6dQrdzXDervOozTx0oII8JTqq0fvlKxENrxyU3pnCt+FuOlzsnxPbQVyh4RXyy+VlFfv6g+rv/HJ/XPc8Rh7RwiTKPC2/LXP3ouZwouzoNwvhB3fWSMvL2FeQu7QKNTIV/1yk7ajiXIfqPKdSlLtRgeVSWg4Tp5XgnJPdveGYRjlZk/2/kO8bSYC3Ft64mSa3CeHtY11K9n7ePNJJLQPQnjSxJH7VyUg9w1rQx3JHQm+wv2rMknuoLstBgvdogZvR4Rf57PpjpNMJrM1We5Gv98dHnd0Ba9Kjo4+EiN3mthV9oQwWeK3I0Pqu6FfCvHZFyeZxfPzoLtxQScO+My3p5dneVM5108cuWHsWGiLM29vSXJ78wXujg8+4HPunZ14W03Sewtyxwa/EcI3GvSxWPghxDLkjoeOEGeVaXLn5MgbdxfiIbjT4Ifi+0IIzKXigV/H9nua3jyY/Y4N4ZiYtNPgg6rBMzFAfMeCFtxpCNg7U/iGl8nEg/zSgOoUueUwJbPVx9WzOJByT18tC6x3BotlHPDkxN/rBNMkU9j6jTSJAx7EjlJT7J2rZqzZLKrvWOg8o2an+kfBLbm5+h5C7zjQE/UpgsswkaPwAeSOBz0xxeFyqSzwrAp3F+JCCj6aJLg0N8l9hovDcTIxUnK22pbc9Vk/45PCKzhv61QXC7baPIgVA5wyiRUpuB0p1YxDgfj5nc+ZQO6YGQvOO5dbFi9+XMijJvjOxfhxIiVwhko08J2i94EU/MOiT+526xjmvh90nb/Ldcs6Q7XSau22+sOiBrXvDStSqJUUy4oFjlHdK3piTYYIjj08ELr8jtEl3H16KFhwfGvRQ6JjzP2wQG4AAAAAAAAAAAAAAAAAAAAAAABPgH8BS7S8rehtAyEAAAAASUVORK5CYII=" width="30%" alt="">
+            </ul>
+            <br>
+            <h3>Desventajas</h3>
+            <ul>
+                <li>El problema principal de las cookies radica en su capacidad para almacenar variada
+                    información, lo que complica la protección de la privacidad. Esto facilita a ciberdelincuentes la
+                    posibilidad de emplear dicha información para actividades ilegales. Además, estas cookies
+                    pueden ser diseñadas para rastrear las páginas visitadas en la web, lo que permite deducir
+                    características del usuario, como género y edad, creando un perfil para ofrecer productos o
+                    realizar campañas publicitarias específicas.
+                   </li>
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmoZ8kox3Pj6OMqwVS-hx_VBMcUU94TwV5Jv0sDtKd6m7KUJ3ZbULFYsRLlcMm1BRRPA&usqp=CAU" width="30%">
+            </ul>
+        </div>
+    </div>
+    <!-- Incluir los archivos JavaScript de Bootstrap (jQuery y Popper.js son necesarios) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es-mex">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación</title>
+    <!-- Incluir los archivos CSS de Bootstrap (5.0) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <style>
+        .custom-navbar{
+            background-color: aquamarine;
+        }
+        .custom-navbar .navbar-nav .nav-link{
+            color: black;
+            font-size: 20px;
+        }
+        p{
+            font-size: 18px;
+            color: black;
+        }
+        body{
+            background-color: rgb(243, 242, 159);
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <!-- Botón de Inicio -->
+            <a class="navbar-brand" href="index.html" >Inicio</a>
+            
+            <!-- Botón de Hamburguesa (para dispositivos móviles) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Elementos Desplegables -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Elemento de Tipos Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="tiposDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tipos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="tiposDropdown">
+                            <a class="dropdown-item" href="categoria.html">Categorias</a>
+                            <a class="dropdown-item" href="politica.html">Politica</a>
+                            <a class="dropdown-item" href="configurar.html">Configuracion</a>
+                        </div>
+                    </li>
+
+                    <!-- Elemento de Información Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Información
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="infoDropdown">
+                            <a class="dropdown-item" href="que es.html">¿Que es?</a>
+                            <a class="dropdown-item" href="origen.html">Origen</a>
+                        </div>
+                    </li>
+
+                    <!-- Elemento de Uso Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="usoDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Uso
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="usoDropdown">
+                            <a class="dropdown-item" href="ventajas.html">Ventajas</a>
+                            <a class="dropdown-item" href="empresa.html">Empresa</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1><center>CONFIGURACION DE COOKIES</center></h1>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 text-justify">
+                <h2>Cookies temporales</h2>
+                <p>Son como pequeños asistentes que están allí para
+                    servirnos durante nuestra estancia en un sitio web.Las cuales no se quedan instaladas en el
+                    navegador o el ordenador.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="data:image/png;base64,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"alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 text-justify">
+                <h2>Cookies Permanentes</h2>
+                <p>Se quedan en el disco duro del ordenador para que la página que las
+                    instala pueda leerlas e identificarte cada vez que vuelvas a visitarla y suelen tener fechas de
+                    expiración.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://www.solvetic.com/uploads/tutorials/monthly_09_2019/a3c30bbe4dab2df6e238a0b9c87b35cf.png" width="305px" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 text-justify">
+                <h2>Cookies también pueden ser propias o de terceros</h2>
+                <p> Las propias son las que utiliza una
+                    página web, y que han sido diseñadas por esta misma web. Las cookies de terceros son las que
+                    otras empresas y servicios le han pedido a la página web que también instalen en el ordenador
+                    cuando accedes a ella.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTeaGlWZ9YTE1vK0HYtLQUub7umG-cVIql_ra6hBYHhEkylzuYLaIPrw13v16o4L_s95I&usqp=CAU" width="320px" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 text-justify">
+                <h2>Cookies Técnicas o necesarias</h2>
+                <p> Son necesarias ya que no se pueden desactivar de una
+                    pagina web. Este tipo de cookie ayuda a detener o controlar el trafico y la comunicación de datos
+                    internos como puede ser el finalizar una compra, seguridad. En pocas palabras sirve para optimizar
+                    el funcionamiento de una pagina web.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="data:image/jpeg;base64,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" width="320px" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 text-justify">
+                <h2>Cookies de rendimiento y análisis</h2>
+                <p> Sirven para que la paginas que visitas pueda tomar
+                    información. Analiza lo que el usuario puede hacer adentro de la pagina. Normalmente ese tipo de
+                    cookies se utiliza en paginas de compras como puede ser mercado libre, Amazon, o paginas que se
+                    dedican a vender algun producto.
+                   </p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://i.ytimg.com/vi/QFrUTDfYgnM/mqdefault.jpg" width="320px" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Incluir los archivos JavaScript de Bootstrap (jQuery y Popper.js son necesarios) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

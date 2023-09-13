@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es-mex">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación</title>
+    <!-- Incluir los archivos CSS de Bootstrap (5.0) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <style>
+        .custom-navbar{
+            background-color: aquamarine;
+        }
+        .custom-navbar .navbar-nav .nav-link{
+            color: black;
+            font-size: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .biography {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .biography img {
+            max-width: 300px; 
+            float: right; 
+            margin-left: 20px; 
+        }
+        p{
+            font-size: 18px;
+        }
+        body{
+            background-color: rgb(243, 242, 159);
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <!-- Botón de Inicio -->
+            <a class="navbar-brand" href="index.html" >Inicio</a>
+            
+            <!-- Botón de Hamburguesa (para dispositivos móviles) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Elementos Desplegables -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Elemento de Tipos Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="tiposDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tipos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="tiposDropdown">
+                            <a class="dropdown-item" href="categoria.html">Categorias</a>
+                            <a class="dropdown-item" href="politica.html">Politica</a>
+                            <a class="dropdown-item" href="configurar.html">Configuracion</a>
+                        </div>
+                    </li>
+
+                    <!-- Elemento de Información Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Información
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="infoDropdown">
+                            <a class="dropdown-item" href="que es.html">¿Que es?</a>
+                            <a class="dropdown-item" href="origen.html">Origen</a>
+                        </div>
+                    </li>
+
+                    <!-- Elemento de Uso Desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="usoDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Uso
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="usoDropdown">
+                            <a class="dropdown-item" href="ventajas.html">Ventajas</a>
+                            <a class="dropdown-item" href="empresa.html">Empresa</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <h1>Origen De los Cookies Por Lou
+        Montulli </h1>
+        <div class="biography">
+            <img src="https://www.eleconomista.com.mx/__export/1643312032050/sites/eleconomista/img/2022/01/27/lou_montulli_cookies_afp.png_1758632412.png" alt="Imagen de Louis J. Montulli II">
+            <div>
+                <h2>Información Personal</h2>
+                <p><strong>Nombre:</strong> Louis J. Montulli II</p>
+                <p><strong>Fecha de Nacimiento:</strong> 1971</p>
+                <p><strong>Profesión:</strong> Informático</p>
+            </div>
+    
+            <h2>Biografía</h2>
+            <p>
+                Las cookies existen desde hace casi tanto tiempo como la web. Las inventó el programador Lou
+                Montulli en 1994 para Netscape Communications, con el objetivo de que los usuarios de una
+                aplicación de e-commerce tuvieran una cesta de la compra mientras navegaban por la tienda
+                online.
+                Es el creador del navegador Lynx , el inventor de la etiqueta blink y del uso de cookies a nivel del navegador. Escribió la especificación para el primer navegador que usó este concepto. Originalmente llamó a esta técnica objeto de estado de cliente persistente , pero el nombre cambió a "cookie mágica" y luego simplemente "cookie".
+                Fundó varias startups, incluida en 2007 la empresa Zetta, dedicada a soluciones de computación en la nube .
+                Fue incluido en la lista de los mejores innovadores menores de 35 años en 2002.
+            </p>
+    
+            <h2>Logros Destacados</h2>
+            <ul>
+                <li>Invención de las cookies</li>
+                <li>Desarrollo de tecnologías web</li>
+                <li>Trayectoria en la industria tecnológica</li>
+            </ul>
+        </div>
+    <!-- Incluir los archivos JavaScript de Bootstrap (jQuery y Popper.js son necesarios) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
